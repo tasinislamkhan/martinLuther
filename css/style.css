@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+
+/*Header Part Start*/
+.header{
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 1px 1px 29px #bbbba2;
+}
+.navBar{
+    width: 1140px;
+    height: 70px;
+    margin: 0 auto;
+}
+.logo_side{
+    height: 70px;
+    width: 50%;
+    float: left;
+}
+.logo{
+    display: inline-block;
+    height: 70px;
+    width: 134px;
+    line-height: 3.1;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    color: #F34236;
+    padding-left: 9px;
+}
+.menu_side{
+    height: 70px;
+    width: 50%;
+    float: left;
+}
+.container .navBar .menu{
+    width: 485px;
+    height: 70px;
+    margin-left: 64px;
+}
+.container .navBar .menu ul li{
+    display: inline-block;
+    height: 70px;
+    width: 66px;
+    text-align: center;
+    line-height: 4.5;
+    font-size: 15px;
+    margin-right: 11px;
+    font-weight: 600;
+    color: #111111;
+    position: relative;
+    transform: .4s;
+    z-index: 1;
+}
+.navBar .menu ul li:hover{
+    color: #111111;
+}
+.navBar .menu ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F34236;
+    position: absolute;
+    z-index: -1;
+    transition: .4s;
+}
+.navBar .menu ul li:hover::after{
+    width: 66px;
+    transition: .4s;
+    left: 0;
+}
+/*Header Part End*/
+
+/* Banner Part Start */
+#banner {
+    background: url(../img/home.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  }
+  
+  #banner .banner_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  #banner .banner_content h2 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 300;
+  }
+  
+  #banner .banner_content h1 {
+    color: #fff;
+    font-size: 90px;
+    letter-spacing: 2px;
+  }
+  
+  #banner .banner_content p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    width: 710px;
+    padding: 20px 0 50px;
+  }
+  
+  #banner .banner_content a {
+    color: #fff;
+    background: #f34236;
+    border-color: #f34236;
+    border-radius: 3px;
+    box-shadow: 0px 8px 15px rgb(0, 0, 0, 0.1);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 16px 34px;
+    line-height: 25px;
+    text-transform: uppercase;
+    transition: linear 0.5s;
+  }
+  
+  #banner .banner_content a:hover {
+    background: #111;
+    box-shadow: 0px 8px 20px rgba(243, 66, 54, 0.59);
+  }
+  /* Banner Part End */
+  
+  /* About Me part start*/
+  #aboutMe{
+      height: 650px;
+      position: relative;
+  }
+  #aboutMe #aboutMe_elements{
+      height: 450px;
+      width: 1109px;
+      margin: 100px 120px;
+      position: absolute;
+  }
+  #aboutMe_elements .aboutMe_img img{
+      width: 450px;
+      height: 450px;
+      padding: 10px;
+      box-shadow: rgb(216 216 200) 1px 6px 20px;
+      float: left;
+  }
+  #aboutMe_elements .aboutMe_text{
+      width: 600px;
+      height: 450px;
+      float: right;
+      position: relative;
+  }
+  #aboutMe_elements .aboutMe_text h2{
+      font-weight: 600;
+      font-size: 32px;
+      padding-top: 30px;
+  }
+  #aboutMe_elements .aboutMe_text span{
+      color: #F34236;
+  }
+  #aboutMe_elements .aboutMe_text h2::after{
+      content: " ";
+      width: 60px;
+      height: 3px;
+      background-color: #111111;
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-top: 76px;
+  }
+  #aboutMe_elements .aboutMe_text h5{
+      margin-top: 35px;
+      font-size: 20px;
+  }
+  #aboutMe_elements .aboutMe_text p{
+      color: #828292;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.6;
+      margin-top: 15px;
+  }
+  .social_sites .icon{
+      height: 40px;
+      width: 40px;
+      background-color: #111;
+      border-radius: 5px;
+      margin-top: 15px;
+      float: left;
+      margin-left: 6px;
+  }
+  .social_sites .icon:hover{
+      background-color: white;
+      transition: .5s;
+      border: 1px solid #111;
+  }
+  .social_sites .icon i{
+    color: white;
+    margin: 12px 13px;
+    font-size: 17px;
+    
+  }
+  .social_sites .icon:hover i{
+      color: #111;
+      transition: .5s;
+  }
+  .aboutMe_text #contactMe{
+      height: 50px;
+      width: 145px;
+      border-radius: 5px;
+      background-color: #F34236;
+      text-transform: capitalize;
+      float: left;
+      margin-left: -230px;
+      margin-top: 75px;
+  }
+  .aboutMe_text #download_cv{
+      height: 50px;
+      width: 160px;
+      border-radius: 5px;
+      background-color: #F34236;
+      text-transform: capitalize;
+      float: left;
+      margin-top: 75px;
+      margin-left: -75px;
+  }
+  /*About Me Part End*/
