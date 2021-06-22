@@ -12,7 +12,9 @@ a{
 li{
     list-style: none;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 /*Header Part Start*/
 .header{
     height: 70px;
@@ -229,6 +231,18 @@ li{
       float: left;
       margin-left: -230px;
       margin-top: 75px;
+      transition: .6s;
+  }
+  .aboutMe_text #contactMe:hover{
+    background: #111;
+    box-shadow: 0px 8px 20px rgba(243, 66, 54, 0.59);
+    transition:  .5s;
+  }
+  .aboutMe_text #contactMe h4{
+      color: white;
+      text-transform: uppercase;
+      padding: 17px 23px;
+      font-size: 15px;
   }
   .aboutMe_text #download_cv{
       height: 50px;
@@ -239,5 +253,26 @@ li{
       float: left;
       margin-top: 75px;
       margin-left: -75px;
+      transition: .6s;
+  }
+  .aboutMe_text #download_cv:hover{
+    background: #111;
+    box-shadow: 0px 8px 20px rgba(243, 66, 54, 0.59);
+    transition:  .5s;
+  }
+  .aboutMe_text #download_cv h4{
+      color: white;
+      text-transform: uppercase;
+      padding: 17px 22px;
+      font-size: 15px;
   }
   /*About Me Part End*/
+
+
+
+
+
+
+
+
+
